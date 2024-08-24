@@ -2,9 +2,7 @@
 
 The purpose of this project is to publish the government data from [data.gov.in](https://data.gov.in/) into an informational website.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
-
-This app is a standalone app, does not require any module file.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0. This app is a standalone app, does not require any module file.
 
 ## Development server
 
