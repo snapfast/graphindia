@@ -1,0 +1,86 @@
+:host {
+  --sky-blue: oklch(70.0% 0.15 240.0);
+  --deep-blue: oklch(40.0% 0.20 240.0);
+  --forest-green: oklch(50.0% 0.25 120.0);
+  --lime-green: oklch(70.0% 0.30 120.0);
+  --sun-yellow: oklch(80.0% 0.25 90.0);
+  --golden-yellow: oklch(60.0% 0.30 90.0);
+
+  --gray-900: oklch(20.0% 0.01 240.0);
+  --gray-700: oklch(40.0% 0.02 240.0);
+  --gray-400: oklch(70.0% 0.02 240.0);
+
+  --blue-to-green-vertical-gradient: linear-gradient(180deg,
+      var(--sky-blue) 0%,
+      var(--lime-green) 50%,
+      var(--forest-green) 100%);
+
+  --blue-to-green-horizontal-gradient: linear-gradient(90deg,
+      var(--sky-blue) 0%,
+      var(--lime-green) 50%,
+      var(--forest-green) 100%);
+
+  --pill-accent: var(--sun-yellow);
+
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-div {
+  width: 80%;
+  max-width: 1200px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .responsive-div {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-div {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+h1 {
+  font-size: 3.125rem;
+  color: var(--gray-900);
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.125rem;
+  margin: 0;
+  font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+}
